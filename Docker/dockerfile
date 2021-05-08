@@ -1,0 +1,7 @@
+#mahmod 
+FROM ubuntu:latest
+RUN apt-get update 
+RUN apt-get install -y python3.9
+COPY . /Docker
+WORKDIR /Docker
+CMD python3.9 app.py
